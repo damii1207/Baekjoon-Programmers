@@ -1,10 +1,11 @@
 t = int(input())
-n = int(input())
-s = int()
-for i in range(n):
-    a, b = map(int, input().split())
-    s += (a*b)
-if s == t :
+c = int(input())
+sum = 0
+
+for i in range(c):
+    a,b  = map(int,input().split())
+    sum = sum + a*b
+if sum == t:
     print("Yes")
-else :
+else:
     print("No")

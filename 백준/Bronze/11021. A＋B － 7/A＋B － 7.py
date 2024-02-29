@@ -1,4 +1,4 @@
 t = int(input())
-for i in range(1,t+1):
+for i in range (t):
     a,b = map(int,input().split())
-    print("Case #",i,": ",a+b,sep='')
+    print("Case #",i+1,': ',a+b,sep='')

@@ -1,5 +1,5 @@
-list_n = []
+list = list(int(input()) for i in range(9))
+print(max(list))
 for i in range(9):
-    list_n.append(int(input()))
-print(max(list_n))
-print(list_n.index(max(list_n))+1)
+    if list[i] == max(list):
+        print(i+1)

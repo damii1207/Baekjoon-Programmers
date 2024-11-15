@@ -1,12 +1,14 @@
-paper = [[0 for _ in range(100)] for _ in range(100)]
-color_paper_num = int(input())
-
-for i in range(color_paper_num):
-  left, bottom = map(int, input().split())
-  for y in range(bottom,bottom+10):
-    for x in range(left,left+10):
-      paper[y][x] = 1
+arr = [[0 for _ in range(100)] for _ in range(100)]
+n = int(input())
 total = 0
+
+for i in range(n):
+    a,b = map(int,input().split())
+    for j in range(b,b+10):
+        for k in range(a,a+10):
+            arr[j][k] = 1
+
 for i in range(100):
-    total += paper[i].count(1)
+    for j in range(100):
+        total += arr[i][j]
 print(total)
